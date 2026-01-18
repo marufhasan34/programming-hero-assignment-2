@@ -29,6 +29,7 @@ body {
   font-family: "Inter", sans-serif;
   background-color: #1a0b2e;
   color: white;
+  
 }
 .container {
   max-width: 1200px;
@@ -88,7 +89,7 @@ nav button i {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 100px 20px;
 }
 
 .banner-circle {
@@ -165,6 +166,43 @@ nav button i {
   margin-left: 10px;
 }
 /* banner section end */
+/* about section start */
+#about {
+  margin: 50px 0 120px;
+}
+.about-content {
+  text-align: center;
+  padding: 20px;
+}
+.about-content h2 {
+  font-weight: 700;
+  font-size: 48px;
+}
+.about-content p {
+  font-weight: 400;
+  font-size: 16px;
+  border-bottom: 1px solid gray;
+ 
+  padding: 16px 0 80px;
+}
+.about-all-cards {
+  margin: 80px 0 120px;
+ display: flex;
+ justify-content: space-between;
+ padding: 20px;
+ gap: 15px;
+}
+.about-card h3 {
+  font-weight: 900;
+  font-size: 48px;
+  color: #0f8;
+}
+.about-card p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 16px;
+}
+/* about section end */
 
 /* responsive 576px start*/
 @media screen and (max-width: 576px) {
@@ -177,12 +215,16 @@ nav button i {
     border-bottom: 1px solid #412567;
     padding: 20px;
   }
+  
+  .about-all-cards{
+    flex-wrap: wrap;
+  }
 }
 /* responsive 576px end*/
 
 /* responsive 992px start*/
 @media screen and (min-width: 576px) and (max-width: 992px) {
-     nav {
+  nav {
     display: none;
   }
   .nav-responsive {
