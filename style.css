@@ -282,13 +282,15 @@ nav button i {
 }
 .featured-card {
   border-radius: 24px;
- transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   background: #250d44;
   padding: 14px;
 }
 .featured-card:hover {
   transform: translateY(-28px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 .featured-card iframe {
   width: 100%;
@@ -303,11 +305,46 @@ nav button i {
   font-weight: 400;
   font-size: 16px;
 }
-.card-min{
-    margin: 12px 0 24px;
-    color: #00ff88;
+.card-min {
+  margin: 12px 0 24px;
+  color: #00ff88;
 }
 /* featured section end */
+/* meet section start */
+#meet h2 {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  margin: 120px 0 40px;
+}
+.meet-class {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  border-radius: 40px;
+  padding: 40px;
+  height: 280px;
+  background: rgba(53, 17, 101, 0.4);
+}
+.meet-class h3 {
+  font-weight: 700;
+  font-size: 32px;
+}
+.meet-class p {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 16px 0;
+}
+.icon  {
+  display: flex;
+  gap: 10px;
+}
+.icon img{
+    border: 1px solid gray;
+    padding: 12px;
+    border-radius: 20px;
+}
+/* meet section end */
 /* responsive 576px start*/
 @media screen and (max-width: 576px) {
   nav {
@@ -339,9 +376,19 @@ nav button i {
     width: 400px;
     height: 287px;
   }
-  .featured-all-cards{
+  .featured-all-cards {
     grid-template-columns: 1fr;
     padding: 10px;
+  }
+  .meet-class{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+  .icon{
+    justify-content: center;
   }
 }
 /* responsive 576px end*/
@@ -373,7 +420,7 @@ nav button i {
     width: 400px;
     height: 287px;
   }
-   .featured-all-cards{
+  .featured-all-cards {
     grid-template-columns: 1fr;
     padding: 10px;
   }
