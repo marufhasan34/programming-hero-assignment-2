@@ -345,6 +345,38 @@ nav button i {
     border-radius: 20px;
 }
 /* meet section end */
+/* footer section start */
+footer{
+    background-image: url(./assets/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 412px;
+  margin-top: 120px;
+}
+footer .footer-content h1{
+     font-weight: bolder;
+  
+}
+.footer-content {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+   height: 412px;
+}
+.all-contact{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 32px;
+}
+.contact{
+    display: flex;
+    gap: 10px;
+}
+/* footer section end */
 /* responsive 576px start*/
 @media screen and (max-width: 576px) {
   nav {
@@ -388,6 +420,14 @@ nav button i {
     padding: 20px;
   }
   .icon{
+    justify-content: center;
+  }
+  footer{
+    text-align: center;
+  }
+  .all-contact{
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
   }
 }
