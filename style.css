@@ -134,6 +134,7 @@ nav button i {
 }
 .banner-btn button {
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .banner-btn button:hover {
   transform: scale(1.1);
